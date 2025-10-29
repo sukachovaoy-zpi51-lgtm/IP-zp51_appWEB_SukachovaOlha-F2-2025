@@ -3,9 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sukachova Olha</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <button class="burger-btn" aria-label="Menu" data-btn="burger-btn">
+                    <span class="burger-btn__line"></span>
+                    <span class="burger-btn__line"></span>
+                    <span class="burger-btn__line"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#hero-section">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#about-section">About me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contacts-section">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main" styles="flex-grow: 1;">
+            <section class="section hero-section" id="hero-section">
+                <div class="container">
+                    <div class="hero-section__container">
+                        <div class="hero-section__column hero-section__column--min">
+                            <div class="hero-section__img">
+                                <img src="./images/image.webp" alt="Olha Sukachova">
+                            </div>
+                            
+                        </div>
+                        <div class="hero-section__column">
+                            <h1 class="h1">
+                                Hi, I am Olha, Web Developer
+                            </h1>
+                            <p class="hero-section__text text">
+                                I create responsive and user-friendly websites.
+                            </p>
+                            <a href="https://github.com/sukachovaoy-zpi51-lgtm" class="btn btn--primary" target="_blank">
+                                    View My GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about-section" id="about-section">
+                <div class="container">
+                    <h2 class="h2">About me</h2>
+                    <div class="about-section__container">
+                        <div class="card">
+                        <div class="card__img">
+                            <img src="./images/2.png" alt="about-us-2" loading="lazy">
+                        </div>
+                        <div class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dicta.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./images/3.png" alt="about-us-3" loading="lazy">
+                        </div>
+                        <div class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur asperiores illum ipsa ipsum commodi minus ipsam tenetur quae sint.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./images/4.png" alt="about-us-4" loading="lazy">
+                        </div>
+                        <div class="card__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur cum in expedita!  
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./images/5.png" alt="about-us-5" loading="lazy">
+                        </div>
+                        <div class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, neque voluptatem commodi qui praesentium saepe, quia unde dignissimos possimus, nemo provident!
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./images/6.png" alt="about-us-6" loading="lazy">
+                        </div>
+                        <div class="card__text">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contacts-section" id="contacts-section">
+                <div class="container">
+                    <div class="contacts-section__container">
+                        <h2 class="h2 contacts-section__title">
+                            Contact Me
+                        </h2>
+                        <p class="contacts-section__text text">
+                            Feel free to reach out for collaborations or just a friendly hello!
+                        </p>
+                        <ul class="contacts-section__list">
+                            <li class="contacts-section__item">
+                                <a href="mailto:olya.sukachova@gmail.com" class="contacts-section__link">
+                                    <span class="contacts-section__icon contacts-section__icon--email">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="contacts-section__item">
+                                <a href="https://x.com/OSukachova" class="contacts-section__link" target="_blank">
+                                    <span class="contacts-section__icon contacts-section__icon--twitter">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="contacts-section__item">
+                                <a href="https://github.com/sukachovaoy-zpi51-lgtm" class="contacts-section__link" target="_blank">
+                                    <span class="contacts-section__icon contacts-section__icon--github">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    &copy; <span id="year"></span> Olha Sukachova. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
