@@ -24,6 +24,9 @@
                             <a class="nav__link" href="#about-section">About me</a>
                         </li>
                         <li class="nav__item">
+                            <a class="nav__link" href="#portfolio-section">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
                             <a class="nav__link" href="#contacts-section">Contacts</a>
                         </li>
                     </ul>
@@ -103,12 +106,80 @@
                 </div>
             </section>
 
+            <section class="section protfolio-section" id="portfolio-section">
+                <div class="container">
+                    <h2 class="h2">Portfolio</h2>
+                </div>
+                    <div class="protfolio-section__container">
+                        <div class="protfolio-card">
+                            <div class="protfolio-card__img">
+                                <img src="./images/portfolio1.png" alt="portfolio-1" loading="lazy">
+                            </div>
+                            <div class="portgolio-card__content">
+                                <div class="protfolio-card__title">
+                                    Project 1 Description
+                                </div>
+                                <div class="portfolio-card__labels">
+                                    <span class="label">2025</span>
+                                    <span class="tag">Dashboard</span>
+                                </div>
+                                <div class="portfolio-card__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus quia illo ratione est omnis repudiandae hic commodi fugit, dolorum, sunt ab architecto facere iure officia nam exercitationem alias libero.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="protfolio-card">
+                            <div class="protfolio-card__img">
+                                <img src="./images/portfolio2.png" alt="portfolio-2" loading="lazy">
+                            </div>
+                            <div class="portgolio-card__content">
+                                <div class="protfolio-card__title">
+                                    Project 2 Description
+                                </div>
+                                <div class="portfolio-card__labels">
+                                    <span class="label">2024</span>
+                                    <span class="tag">Illustration</span>
+                                </div>
+                                <div class="portfolio-card__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatem.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="protfolio-card">
+                            <div class="protfolio-card__img">
+                                <img src="./images/portfolio3.png" alt="portfolio-3" loading="lazy">
+                            </div>
+                            <div class="portgolio-card__content">
+                                <div class="protfolio-card__title">
+                                    Project 3 Description
+                                </div>
+                                <div class="portfolio-card__labels">
+                                    <span class="label">2022</span>
+                                    <span class="tag">Typography</span>
+                                </div>
+                                <div class="portfolio-card__text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, debitis laudantium. Nesciunt asperiores unde illum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
             <section class="section contacts-section" id="contacts-section">
                 <div class="container">
-                    <div class="contacts-section__container">
-                        <h2 class="h2 contacts-section__title">
+                    <h2 class="h2 contacts-section__title">
                             Contact Me
                         </h2>
+                    <form action="" class="form">
+                        <input type="text" class="input" name="name" placeholder="Your Name" required>
+                        <input type="email" class="input" name="email" placeholder="Your Email" required>
+                        <textarea class="input" name="message" placeholder="Your Message" rows="7" required></textarea>
+                        <button type="" class="btn btn--primary form__btn">
+                            Send Message
+                        </button>
+                    </form>
+                    <div class="contacts-section__container">
+                        
                         <p class="contacts-section__text text">
                             Feel free to reach out for collaborations or just a friendly hello!
                         </p>

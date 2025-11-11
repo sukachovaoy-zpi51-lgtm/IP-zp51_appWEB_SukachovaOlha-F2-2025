@@ -698,6 +698,79 @@ body {
     margin-bottom: 20px;
 }
 
+/* portfolio section */
+
+.protfolio-section__container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.protfolio-section__container::-webkit-scrollbar {
+    height: 0px;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.protfolio-card {
+  margin: 0 20px;
+  min-width: 320px;
+  width: 320px;
+  border-bottom: 1px solid var(--color-light);
+  padding-bottom: 20px;
+}
+
+.protfolio-card__img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.protfolio-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.protfolio-card__title {
+  font-family: "montserrat-bold";
+  font-size: 24px;
+}
+
+.portfolio-card__labels {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    font-size: 12px;
+
+}
+
+.portfolio-card__labels .tag {
+    color: var(--color-primary);
+    margin-left: 10px;
+}
+
+.portfolio-card__labels .label {
+    background-color: var(--color-dark);
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.portfolio-card__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-dark);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
 /* contacts section */
 
 .contacts-section__container {
@@ -761,6 +834,29 @@ body {
     background-image: url('../images/icons/github.svg');
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    border: 1px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input::placeholder {
+    color: var(--color-light);
+}
+
 /* footer styles */ 
 
 .footer {
@@ -822,7 +918,7 @@ body {
 
 /* desktop styles */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     body {
         font-size: 18px;
     }
@@ -868,7 +964,15 @@ body {
         padding: 30px;
     }
 
+    .card:last-child {
+      margin-bottom: 20px;
+    }
+
     .about-section__container {
         justify-content: space-evenly;
+    }
+
+    .protfolio-section__container {
+        justify-content: center;
     }
 }
